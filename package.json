@@ -1,0 +1,31 @@
+{
+  "name": "qapp-framework",
+  "version": "0.1.0",
+  "description": "PWA runner/wrapper app for native-feeling web app experiences",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --project jsconfig.json",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write src/",
+    "format:check": "prettier --check src/",
+    "check": "npm run typecheck && npm run lint && npm run format:check",
+    "test": "node --test src/**/*.test.js",
+    "classify": "node bin/classify.js",
+    "install-app": "node bin/install.js",
+    "uninstall-app": "node bin/uninstall.js",
+    "list-apps": "node bin/list.js",
+    "build": "cmake -B build && cmake --build build"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "eslint": "^9.20.0",
+    "prettier": "^3.5.0",
+    "typescript": "^5.8.0",
+    "typescript-eslint": "^8.25.0"
+  },
+  "dependencies": {
+    "valibot": "^1.2.0"
+  }
+}

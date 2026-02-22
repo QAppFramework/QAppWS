@@ -1,0 +1,23 @@
+# Third-Party Licenses
+
+This file acknowledges third-party software used by QApp.
+
+## Qt Framework
+
+- License: LGPL v3 / GPL v2 / GPL v3 (open source) or Commercial
+- Website: https://www.qt.io/licensing
+- Modules used: Qt Core, Qt GUI, Qt Quick, Qt Quick Controls
+- Note: QApp links dynamically against Qt libraries under the LGPL v3 license.
+  Users may replace the Qt libraries with modified versions as permitted by LGPL.
+
+## Valibot
+
+- License: MIT
+- Website: https://github.com/fabian-hiller/valibot
+- Usage: Runtime schema validation for W3C Web App Manifest parsing
+
+## Node.js
+
+- License: MIT (with bundled dependencies under various permissive licenses)
+- Website: https://nodejs.org
+- Usage: Runtime for classification pipeline (CLI tooling)
